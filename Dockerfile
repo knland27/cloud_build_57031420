@@ -2,16 +2,16 @@
 FROM python:3.9-slim
 
 # Set the working directory
-WORKDIR /src
+WORKDIR /app
 
 # Copy the requirements file
-COPY requirements.txt /src
+COPY requirements.txt .
 
 # Install the dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the application files
-COPY . /src
+COPY . .
 
 # Expose the port
 EXPOSE 8080
