@@ -5,7 +5,7 @@ port = 8080
 
 @app.route('/')
 def hello_world():
-    return 'Hello, World!'
+    return 'Hello, from flask!'
 
 @app.route('/create-post')
 def create_post():
