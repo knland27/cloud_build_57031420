@@ -5,13 +5,13 @@ FROM python:3.9-slim
 WORKDIR /src
 
 # Copy the requirements file
-COPY requirements.txt .
+COPY requirements.txt /src
 
 # Install the dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the application files
-COPY . .
+COPY . /src
 
 # Expose the port
 EXPOSE 8080
