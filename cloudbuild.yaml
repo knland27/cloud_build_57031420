@@ -14,7 +14,7 @@ steps:
     - 'cb-trigger'
     - '--image'
     - 'us-central1-docker.pkg.dev/knlandaverde-dev/cb-57031420/app/cb-trigger:$COMMIT_SHA'
-    - 'region'
+    - '--region'
     - 'us-central1'
 options:
   logging: CLOUD_LOGGING_ONLY
